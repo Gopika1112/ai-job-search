@@ -1,5 +1,4 @@
 import { createClient } from "@/lib/supabase/server";
-import { createAdminClient } from "@/lib/supabase/server";
 import { summarizeJobDescription } from "@/lib/ai/summarize";
 import { NextResponse } from "next/server";
 
