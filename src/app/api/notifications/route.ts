@@ -36,7 +36,7 @@ export async function PATCH(request: Request) {
       await supabase.from("notifications").update({ read: true }).eq("id", id).eq("user_id", user.id);
     }
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "Failed to mark as read" }, { status: 500 });
   }
 }
